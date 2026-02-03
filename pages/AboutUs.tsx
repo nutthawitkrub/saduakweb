@@ -79,6 +79,12 @@ const AboutUs: React.FC = () => {
       instagramid: "@not.ajesse",
       link: "https://www.instagram.com/not.ajesse",
     },
+    {
+      id: "ken",
+      name: "Tammarong Pakittiwet",
+      instagramid: "@k__3np",
+      link: "https://www.instagram.com/k__3np",
+    },
   ];
 
   return (

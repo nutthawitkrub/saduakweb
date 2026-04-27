@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const Navbar: React.FC = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -62,10 +63,12 @@ const Navbar: React.FC = () => {
                             className="transition-all duration-300 transform hover:scale-105"
                             onClick={() => scrollToSection('#top')}
                         >
-                            <img 
+                            <Image
                                 src="/images/saduak_bluetext_bg_whiteLOGO-removebg-preview.png" 
                                 alt="Saduak Logo" 
                                 className="h-25 mt-2"
+                                width="100"
+                                height="100"
                             />
                         </button>
                         </Link>

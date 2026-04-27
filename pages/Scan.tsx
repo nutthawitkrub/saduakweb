@@ -13,7 +13,9 @@ const Scan: React.FC = () => {
                 <h2 className='font-bold'>&ldquo;QR CODE&rdquo;</h2>
                 <div className='mt=2 font-bold'>For more Info</div>
                 <div className='mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-20'>
-                    <QRCODE id={1} name="Presentation" />
+                    <QRCODE id={1} name="Slide Presentation" />
+                    <QRCODE id={2} name="Clip Presentation" />
+                    <QRCODE id={3} name="App Instruction" />
                 </div>
             </div>
         </div>

@@ -16,8 +16,10 @@ export const WorkLeft: React.FC<{ progress: number; children: React.ReactNode }>
   progress,
   children,
 }) => {
-  let translateY = Math.max(0, 50 - progress * 3 * 50);
-  if (progress > 0.85) translateY = Math.max(-50, -(progress - 0.85) * 2 * 50);
+  const translateY =
+    progress > 0.85
+      ? Math.max(-50, -(progress - 0.85) * 2 * 50)
+      : Math.max(0, 50 - progress * 3 * 50);
 
   return (
     <div
@@ -33,7 +35,8 @@ export const WorkRight: React.FC<{ progress: number; children: React.ReactNode }
   progress,
   children,
 }) => {
-  let translateY = Math.max(-50, -(progress - 0.5) * 50);
+  const translateY = Math.max(-50, -(progress - 0.5) * 50);
+
   return (
     <div
       className="flex flex-1 lg:items-center justify-center h-screen"

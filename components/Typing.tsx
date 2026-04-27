@@ -1,6 +1,5 @@
 "use client";
 
-import { clear } from 'console';
 import React, { useState, useEffect } from 'react';
 
 

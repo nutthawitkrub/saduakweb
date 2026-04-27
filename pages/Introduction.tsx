@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
-import Navbar from '../components/Navbar';
+import React, { useEffect } from 'react';
+import Image from 'next/image';
 
 const Introduction: React.FC = () => {
-  const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -50,7 +49,7 @@ const Introduction: React.FC = () => {
                 </h2>
               </div>
               <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-bold scroll-animate">
-                We're building more than a delivery app — we're creating a trusted food ecosystem for students, employees, and local vendors. Born from real problems on campus, our mission is simple: make food access easier, safer, and fairer for everyone. This is for the people — not profit alone.
+                We&apos;re building more than a delivery app — we&apos;re creating a trusted food ecosystem for students, employees, and local vendors. Born from real problems on campus, our mission is simple: make food access easier, safer, and fairer for everyone. This is for the people — not profit alone.
               </p>
             </div>
 
@@ -60,10 +59,12 @@ const Introduction: React.FC = () => {
 
                 {/* Background Phone */}
                 <div className="w-[200px] sm:w-[200px] md:w-[400px] lg:w-[500px] h-[320px] sm:h-[450px] md:h-[600px] lg:h-[750px] rounded-2xl overflow-hidden relative z-10 ">
-                  <img
+                  <Image
                     src="/images/customer_page-removebg-preview.png"
                     alt="Food Delivery App Interface"
                     className="w-full h-full object-cover rounded-3xl"
+                    width="500"
+                    height="500"
                   />
                 </div>
 
@@ -71,10 +72,12 @@ const Introduction: React.FC = () => {
                 <div className="absolute top-20 sm:top-10 md:top-12 lg:top-8 left-10 sm:left-16 md:left-20 lg:-left-25 
                   w-[150px] sm:w-[250px] md:w-[350px] lg:w-[500px] 
                   h-[240px] sm:h-[400px] md:h-[550px] lg:h-[750px] z-20">
-                  <img
+                  <Image
                     src="/images/Phone_Saduak-removebg-preview.png"
                     alt="Saduak Logo Screen"
                     className="w-full h-full object-cover rounded-3xl"
+                    width="1000"
+                    height="1000"
                   />
                 </div>
 

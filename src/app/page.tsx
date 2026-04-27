@@ -1,9 +1,9 @@
 import React from "react";
-import Introduction from "../../pages/Introduction";
-import AboutUs from "../../pages/AboutUs";
-import AppIntroduce from "../../pages/AppIntroduce";
-import AppScreen from "../../pages/AppScreen";
-import Scan from "../../pages/Scan";
+import Introduction from "../pages/Introduction";
+import AboutUs from "../pages/AboutUs";
+import AppIntroduce from "../pages/AppIntroduce";
+import AppScreen from "../pages/AppScreen";
+import Scan from "../pages/Scan";
 
 
 const Home: React.FC = () => {

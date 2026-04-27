@@ -2,14 +2,14 @@
 
 import React from 'react';
 import Image from "next/image";
-import { TileWrapper, TileBackground, TileContent, Tile } from "../components/Tile";
+import { TileWrapper, TileBackground, TileContent, Tile } from "../../components/Tile";
 import {
   WorkContainer,
   WorkBackground,
   WorkLeft,
   WorkRight,
   WorkLink,
-} from "../components/EachScreen";
+} from "../../components/EachScreen";
 
 // Image assets
 const IMAGES = {
